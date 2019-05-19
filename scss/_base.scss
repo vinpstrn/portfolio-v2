@@ -1,0 +1,23 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    color: $white;
+    line-height: 1.2;
+}
+
+.container {
+    max-width: 144rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    background: url(../images/bgg.svg);
+    background-repeat: no-repeat;
+    background-position: 0 60rem;
+    background-size: cover;
+    margin-bottom: -15rem;
+    position: relative;
+}

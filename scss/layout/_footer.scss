@@ -1,0 +1,51 @@
+.footer {
+    background-color: $color-dark;
+    text-align: center;
+
+    &__text {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 2.5rem;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        padding: .75rem;
+        background-color: $color-primary;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 1rem;
+        transition: all .3s linear;
+        box-shadow: 0 .3rem 1rem rgba($color-primary, 0.5);
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            background-color: $white;
+            transform: rotate(360deg);
+        }
+    }
+
+    &__icon {
+        width: 2.25rem;
+        height: 2.25rem;
+        fill: $white;
+        display: block;
+    }
+
+    &__link:hover &__icon {
+        fill: $color-dark;
+    }
+
+    &__description {
+        font-size: 1.1rem;
+        margin-top: .5rem;
+        color: $white-1;
+
+        span {
+            color: $color-primary;
+        }
+    }
+}

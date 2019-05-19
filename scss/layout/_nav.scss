@@ -1,0 +1,39 @@
+.nav {
+    &__list {
+        list-style-type: none;
+        display: flex;
+    }
+
+    &__item {
+        position: relative;
+
+    }
+
+    &__item::before {
+        content: "";
+        height: 3px;
+        left: 1.5rem;
+        bottom: -.5rem;
+        width: 0;
+        position: absolute;
+        background-color: $color-primary;
+        transition: width .5s;
+    }
+
+    &__item:hover::before {
+        width: 85%;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-dark;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-left: 1.5rem;
+        transition: color .2s;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

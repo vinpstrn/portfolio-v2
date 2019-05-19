@@ -1,0 +1,78 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    height: 100vh;
+    width: 100%;
+    @include flex(column);
+    transition: all .2s easy;
+
+    &__loading {
+        height: 15rem;
+        width: 15rem;
+        background-color: transparent;
+        border: .5rem solid $color-primary;
+        border-radius: 50%;
+        margin-bottom: 10rem;
+        position: relative;
+        letter-spacing: 4px;
+        @include flex(row);
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -.5rem;
+            left: -.5rem;
+            height: 15rem;
+            width: 15rem;
+            border: .5rem solid transparent;
+            border-top: .5rem solid $color-dark;
+            border-right: .5rem solid $color-dark;
+            border-radius: 50%;
+            animation: preload 1.5s linear infinite;
+        }
+    }
+
+    &__logo {
+        height: 50%;
+        width: 50%;
+        fill: $color-primary;
+        display: block;
+        margin-top: 1rem;
+        animation: bounce .5s ease infinite alternate;
+    }
+}
+
+.preloader-finish {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes preload {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(.25rem);
+    }
+
+    100% {
+        transform: translateY(-.25rem);
+    }
+}

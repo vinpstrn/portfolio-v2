@@ -1,0 +1,121 @@
+.portfolio {
+    background-color: $white-2;
+
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+        grid-auto-rows: 23rem;
+        grid-gap: 1.5rem;
+        margin-top: 5rem;
+
+    }
+
+    &__item {
+        border-radius: 1rem;
+        background-color: black;
+        position: relative;
+        overflow: hidden;
+
+        img { // TEMPORARY ---------------------
+            display: block;
+            width: 100%;
+            height: 100%;
+    
+        }
+    }
+
+    &__details {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        background-color: $color-dark;
+        padding: 1.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: all .2s linear;
+
+        p {
+            line-height: 1.3;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__links {
+        color: $white;
+    }
+
+    &__technology {
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__tech-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &--sm {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        svg {
+            height: 2.5rem;
+            width: 2.5rem;
+            fill: white;
+        }
+    }
+
+    &__tooltip {
+        position: absolute;
+        top: -4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $color-primary;
+        color: $white;
+        padding: .4rem .6rem;
+        border-radius: .5rem;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        visibility: hidden;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: $color-primary transparent transparent transparent;
+        }
+    }
+
+    &__technology:hover &__tooltip {
+        visibility: visible;
+    }
+
+    &__btn-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__btn {
+        padding: .9rem 1.1rem;
+        text-decoration: none;
+        align-self: flex-start;
+        border: 1px solid transparent;
+        font-size: 1.3rem;
+    }
+
+    // HOVER FOR ITEM
+    &__item:hover &__details {
+        opacity: 1;
+    }
+}

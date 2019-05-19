@@ -1,0 +1,63 @@
+.arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 5rem;
+
+    &__down {
+        display: block;
+        height: 3rem;
+        width: 3rem;
+        fill: var(--color-white);
+    }
+}
+
+.txt-dark {
+    color: $color-dark !important;
+}
+
+.active {
+    background-color: red;
+}
+
+.btn {
+    border-radius: 5rem;
+    border: none;
+    background-color: $color-primary;
+    color: $white;
+    display: inline-block;
+    box-shadow: 0 .5rem 1rem rgba($color-primary, 0.5);
+    cursor: pointer;
+    transition: all .2s linear;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: darken($color-primary, 15%);
+        color: $white;
+    }
+
+    &:active {
+        transform: translateY(.5rem);
+        box-shadow: 0 .1rem 1rem rgba($color-primary, 0.5);
+    }
+}
+
+.btn-outline {
+    border: 2px solid $color-primary !important;
+    background-color: transparent;
+    color: $white;
+    box-shadow: none;
+
+    &:hover {
+        background-color: $color-primary;
+    }
+
+    
+}
+
+// hidden
+.hidden {
+    display: none;
+}

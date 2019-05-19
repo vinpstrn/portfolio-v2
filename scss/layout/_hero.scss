@@ -1,0 +1,42 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    &__heading {
+        text-transform: uppercase;
+        color: $color-dark;
+
+        &--primary {
+            display: block;
+            font-size: 3.75rem;
+            font-weight: 800;
+            margin-bottom: -.75rem;
+        }
+
+        &--secondary {
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+    }
+
+    &__btn,
+    &__btn:visited,
+    &__btn:link {
+        padding: 1rem 5rem;
+        text-decoration: none;
+        margin-top: 1.5rem;
+        border: 2px solid transparent;
+        transition: all .2s;
+    }
+
+    &__photo {
+        height: 40rem;
+        width: 40rem;
+    }
+}
