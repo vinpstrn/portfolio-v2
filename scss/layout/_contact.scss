@@ -87,6 +87,10 @@
             }
         }
 
+        &__recaptcha {
+            width: 100%;
+        }
+
         input[type=submit] {
             padding: 1rem 3rem;
             font-family: inherit;
