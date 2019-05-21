@@ -1,6 +1,14 @@
 // Padding
 .p-2by5 {
     padding: 2rem 5rem;
+
+    @media (max-width: 37.5em) { // 600px
+        padding: 2rem 3rem;
+    }
+
+    @media (max-width: 26.25em) { // 420px
+        padding: 2rem;
+    }
 }
 
 .p-3by5 {
@@ -13,9 +21,45 @@
 
 .p-5by5 {
     padding: 5rem 5rem;
+
+    @media (max-width: 37.5em) { // 600px
+        padding: 3rem;
+    }
+
+    @media (max-width: 26.25em) { // 420px
+        padding: 2rem;
+    }
+
+    @media (max-width: 23.5625em) { // 377px
+        padding: 1.5rem;
+    }
 }
 
 // Scroll reveal
 html.sr .load-hidden {
     visibility: hidden;
+}
+
+// Display
+.d-block {
+    display: block !important;
+}
+
+
+// Animations
+
+// Slide right
+.fade {
+    animation-name: fade;
+    animation-duration: .25s;
+    animation-timing-function: linear;
+}
+  
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

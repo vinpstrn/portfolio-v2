@@ -20,4 +20,8 @@ body {
     background-size: cover;
     margin-bottom: -15rem;
     position: relative;
+
+    @media (max-width: 61em) { // 976px
+        margin-bottom: 0;
+    }
 }

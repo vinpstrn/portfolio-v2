@@ -22,7 +22,7 @@
                     <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.6 86.9"><path d="M50.3 52.5L50.3 52.5l-4-6.6L63.3 17h0l2.1-3.8 0.1 0L73.1 0h0 0 0H53.5 0h0 0l50.3 86.9 9.8-17.2 0-0.1 0 0L50.3 52.5zM36.5 29.1l-7-12.1h14L36.5 29.1z" class="a"/><polygon points="100.6 0 81 0 71.1 17 71.2 17 54.2 45 54.3 45 54.2 45.4 64.1 62.9 100.6 0 100.6 0"/></svg>
                 </a>
                 <!-- START OF NAV -->
-                <nav class="nav load-hidden">
+                <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a href="#skills" class="nav__link"> Skills </a>
@@ -37,10 +37,32 @@
                             <a href="#contact" class="nav__link"> Contact </a>
                         </li>
                     </ul>
+                    <button class="nav__menu">
+                        <svg class="nav__menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384"><rect y="277.3" width="384" height="42.7"/><rect y="170.7" width="384" height="42.7"/><rect y="64" width="384" height="42.7"/></svg>
+                    </button>
                 </nav>
                 <!-- END OF NAV -->
             </header>
             <!-- END OF HEADER -->
+            <div class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#home" class="menu__link"> Home </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#skills" class="menu__link"> Skills </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#services" class="menu__link"> Services </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#portfolio" class="menu__link"> Portfolio </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#contact" class="menu__link"> Contact </a>
+                    </li>
+                </ul>
+            </div>
 
             <!-- START OF HERO AREA -->
             <section class="hero p-2by5">
@@ -66,7 +88,7 @@
                     Skills
                 </h1>
                 <p class="heading__description">
-                    This is how I honestly rate my knowledge
+                    This is how I honestly rate <span> my knowledge </span>
                 </p>
             </div>
             <div class="skills">
@@ -147,7 +169,7 @@
                             </li>
                             <li class="skills__item">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 504.1 504.1"><circle cx="252.1" cy="252.1" r="252.1" fill="#17252a"/><path d="M463.2 114.6L240.2 345.4l0.4 24.8h10.2l241.4-194.6C485.2 154 475.4 133.1 463.2 114.6z" fill="#17252a"/><path d="M499.4 103.6l-44.5-44.1c-5.9-5.9-15.8-5.9-22.1 0L242.6 256l-82.3-81.1c-5.9-5.9-15.8-5.9-22.1 0l-39.4 39c-5.9 5.9-5.9 15.8 0 21.7L230.4 365.9c3.5 3.5 8.3 4.7 13 4.3 4.7 0.4 9.5-0.8 13-4.3l243-240.2C505.3 119.3 505.3 109.5 499.4 103.6z" fill="#F2F1EF"/><path d="M256.4 365.9l243-240.2c5.9-5.9 5.9-15.8 0-21.7l-7.1-6.7L243 342.3 105.2 208l-5.9 5.9c-5.9 5.9-5.9 15.8 0 21.7l131.5 130.4c3.5 3.5 8.3 4.7 13 4.3C248.1 370.6 252.8 369.4 256.4 365.9z" fill="#E6E5E3"/></svg>
-                                Visual studio code
+                                Visual studio <span>code</span>
                             </li>
                             <li class="skills__item">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 504.1 504.1"><circle cx="252.1" cy="252.1" r="252.1" fill="#17252a"/><path d="M463.2 114.6L240.2 345.4l0.4 24.8h10.2l241.4-194.6C485.2 154 475.4 133.1 463.2 114.6z" fill="#17252a"/><path d="M499.4 103.6l-44.5-44.1c-5.9-5.9-15.8-5.9-22.1 0L242.6 256l-82.3-81.1c-5.9-5.9-15.8-5.9-22.1 0l-39.4 39c-5.9 5.9-5.9 15.8 0 21.7L230.4 365.9c3.5 3.5 8.3 4.7 13 4.3 4.7 0.4 9.5-0.8 13-4.3l243-240.2C505.3 119.3 505.3 109.5 499.4 103.6z" fill="#F2F1EF"/><path d="M256.4 365.9l243-240.2c5.9-5.9 5.9-15.8 0-21.7l-7.1-6.7L243 342.3 105.2 208l-5.9 5.9c-5.9 5.9-5.9 15.8 0 21.7l131.5 130.4c3.5 3.5 8.3 4.7 13 4.3C248.1 370.6 252.8 369.4 256.4 365.9z" fill="#E6E5E3"/></svg>
@@ -179,7 +201,7 @@
                     Services
                 </h1>
                 <p class="heading__description txt-dark">
-                    Here's what I can offer to your company
+                    Here's what I can offer <span> to your company </span>
                 </p>
             </div>
             <!-- START OF SERVICES BOX AREA -->
@@ -228,7 +250,7 @@
                         <p> <strong> Description:</strong>
                             Runnn is a fictional shoe company website that I designed & developed to showcase my knowledge in front-end development.
                         </p>
-                        <p class="portfolio__tech-title"> Techonologies used: 
+                        <p class="portfolio__tech-title portfolio__tech-title--sm"> Techonologies used: 
                             <span class="portfolio__technology"> 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1771" height="2500" viewBox="221.807 89.47 440 621.061"><filter id="A" width="150%" height="150%" x="-5%" y="-5%"><feFlood flood-color="#000" flood-opacity=".5"/><feComposite in2="SourceAlpha" operator="in"/><feGaussianBlur stdDeviation="8"/><feComposite in2="SourceGraphic" operator="out" result="D"/><feMerge><feMergeNode in="D"/><feMergeNode in="SourceGraphic"/></feMerge></filter><g filter="url(#A)"><path fill="#e44d26" d="M261.85 660.647l-40.042-449.125h440L621.72 660.576 441.537 710.53z"/><path fill="#f16529" d="M441.807 672.348l145.596-40.367 34.258-383.735H441.807z"/><path fill="#ebebeb" d="M441.807 414.82H368.92l-5.035-56.406h77.923V303.33H303.683l14.858 166.572h123.266zm0 143.056l-.242.066-61.346-16.566-3.922-43.93h-55.294l7.718 86.49 112.834 31.323.252-.07z"/><path d="M262.745 89.47h27.992v27.656h25.606V89.47h27.993v83.75h-27.993v-28.044h-25.606v28.044h-28l-.002-83.75zm118.404 27.774h-24.642V89.47H433.8v27.774h-24.654v55.976H381.15v-55.976zm64.916-27.774h29.2l17.955 29.428 17.938-29.428h29.2v83.75h-27.882v-41.512l-19.26 29.778h-.48l-19.272-29.778v41.512h-27.4V89.47zm108.212 0h28v56.068h39.368v27.682h-67.368V89.47z"/><path fill="#fff" d="M441.617 414.82v55.082h67.83l-6.395 71.44-61.435 16.58v57.307l112.924-31.294 15.116-169.115h-14.842zm0-111.5v55.084H574.67l4.93-55.084z"/></g></svg>  
                                 <span class="portfolio__tooltip"> Html5 </span>
@@ -442,7 +464,7 @@
                     Contact
                 </h1>
                 <p class="heading__description txt-dark">
-                    Feel free to contact me, I'd love to hear from you
+                    Feel free to contact me,<span> I'd love to hear from you </span>
                 </p>
             </div>
 
@@ -560,5 +582,6 @@
 <script src="js/app.js"></script>
 <script src="js/carousel.js"></script>
 <script src="js/modal.js"></script>
+<script src="js/navigation.js"></script>
 </body>
 </html>

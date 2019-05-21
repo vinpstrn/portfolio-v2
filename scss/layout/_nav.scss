@@ -1,12 +1,37 @@
 .nav {
+    display: flex;
+
     &__list {
         list-style-type: none;
         display: flex;
+
+        @media (max-width: 25em) { // 400px
+            display: none;
+        }
+    }
+
+    &__menu {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        @media (min-width: 25em) { // 400px
+            display: none;
+        }
+    }
+
+    &__menu-icon {
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: $color-primary;
+
+        &:focus {
+            outline: none;
+        }
     }
 
     &__item {
         position: relative;
-
     }
 
     &__item::before {
@@ -34,6 +59,10 @@
 
         &:hover {
             color: $color-primary;
+        }
+
+        @media (max-width: 42.38em) { // 678px
+            font-size: 1.3rem;
         }
     }
 }

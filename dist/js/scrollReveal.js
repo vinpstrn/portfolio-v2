@@ -1,18 +1,9 @@
-
-ScrollReveal().reveal('.nav', {
-    origin: 'bottom',
-    duration: 1500,
-    distance: '10px',
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    reset: false
-});
-
 ScrollReveal().reveal('.hero__heading-box', {
     origin: 'left',
     duration: 1500,
     distance: '50px',
     easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    reset: true
+    reset: false
 });
 
 ScrollReveal().reveal('.skills__container', {
@@ -21,7 +12,7 @@ ScrollReveal().reveal('.skills__container', {
     distance: '50px',
     easing: 'cubic-bezier(0.5, 0, 0, 1)',
     delay: '500',
-    reset: true
+    reset: false
 });
 
 ScrollReveal().reveal('.heading', {
@@ -29,7 +20,7 @@ ScrollReveal().reveal('.heading', {
     duration: 1500,
     distance: '5px',
     easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    reset: true
+    reset: false
 });
 
 ScrollReveal().reveal('.contact__form', {
@@ -38,7 +29,7 @@ ScrollReveal().reveal('.contact__form', {
     distance: '50px',
     easing: 'cubic-bezier(0.5, 0, 0, 1)',
     delay: '500',
-    reset: true
+    reset: false
 });
 
 ScrollReveal().reveal('.footer__description', {
@@ -46,5 +37,5 @@ ScrollReveal().reveal('.footer__description', {
     duration: 1000,
     distance: '50px',
     easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    reset: true
+    reset: false
 });
