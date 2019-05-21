@@ -75,6 +75,14 @@
             }
         }
 
+        @media (max-width: 79.6875em) { // 1275px
+            padding: 1.25rem;
+        }
+
+        @media (max-width: 50.94em) { // 815px
+            padding: 3rem;
+        }
+
         @media (max-width: 50.94em) { // 815px
             padding: 3rem;
         }
@@ -160,7 +168,15 @@
         border: 1px solid transparent;
         font-size: 1.3rem;
 
-        @media (max-width: 31.25em) { // 500px
+        @media (max-width: 76.875em) { // 1230px
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 75em) { // 1200px
+            font-size: 1.3rem;
+        }
+
+        @media (max-width: 52.9375em) { // 847px
             font-size: 1.2rem;
         }
 

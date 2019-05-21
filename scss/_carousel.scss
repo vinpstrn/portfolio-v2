@@ -1,18 +1,11 @@
-.carousel {
+.slideshow {
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
+    width: 100%;
     background-color: rgba(0,0,0, 0.9);
-    opacity: 0;
-    width: 0;
-    pointer-events: none;
-
-    @media (max-width: 67.5em) { // 1080px
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    display: none;
 
     &__wrapper {
         margin: 13rem auto 0 auto;
@@ -23,37 +16,45 @@
         background-color: $white;
 
         @media (max-width: 67.5em) { // 1080px
-            margin-top: 7rem;
             width: 90%;
-            height: 60vh;
+            margin: 16rem auto 0 auto;
         }
 
         @media (max-width: 56.25em) { // 900px
-            height: 50vh;
+            height: 40rem;
+            margin: 20rem auto 0 auto;
         }
 
-        @media (max-width: 50em) { // 800px
-            height: 45vh;
-        }
+        // @media (max-width: 50em) { // 800px
+        //     height: 45vh;
+        // }
 
         @media (max-width: 46.875em) { // 750px
-            height: 40rem;
+            height: 37.5rem;
         }
 
         @media (max-width: 40.625em) { // 650px
-            height: 35rem;
+            height: 30rem;
         }
 
         @media (max-width: 31.25em) { // 500px
             height: 25rem;
+        }
+
+        @media (max-width: 25em) { // 400px
+            height: 20rem;
+        }
+
+        @media (max-width: 20em) { // 320px
+            height: 18rem;
         }
     }
 
     &__list {
         list-style-type: none;
         height: 100%;
-        width: 100%;
         transition: all .2s ease-in;
+        position: relative;
     }
 
     
@@ -108,8 +109,8 @@
         cursor: pointer;
         
         @media (max-width: 46.875em) { // 750px
-            top: 8rem;
-            right: 3rem;
+            top: 10rem;
+            right: 4rem;
         }
 
         &:focus {
@@ -134,10 +135,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    &__dot.current-slide {
-        background-color: $color-primary;
     }
 
     &__dot {

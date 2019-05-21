@@ -19,6 +19,12 @@
 
         @media (max-width: 42.38em) { // 678px
             width: 35rem;
+            margin: 0;
+        }
+
+
+        @media (max-width: 28.13em) { // 450px
+            width: 25rem;  
         }
     }
 
